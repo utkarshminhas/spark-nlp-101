@@ -1,0 +1,57 @@
+PS C:\Users\utkar\desktop> cd new_one
+PS C:\Users\utkar\desktop\new_one> docker run --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work utkarsh/spark_docker:1.0
+                                   docker run -d --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work utkarsh/spark_docker:1.0
+6c0dc246f998511a7b191ba71aaddc307e2b21c49cf1d92a3292ec91d971e663
+
+PS C:\Users\utkar\desktop\new_one> docker ps -a
+
+docker ps
+
+PS C:\Users\utkar\desktop\new_one> docker exec -it 6c0dc246f998 bash
+jovyan@6c0dc246f998:~$ ls
+	cache_pretrained  jupyter  tutorials  work
+
+jovyan@6c0dc246f998:~$ cd work
+
+jovyan@6c0dc246f998:~/work$ ls
+NER.ipynb  NER.py  dataset
+
+jovyan@6c0dc246f998:~/work$ python3
+
+jovyan@6c0dc246f998:~/work$ spark
+    1  ls
+    2  cd work
+    3  ls
+    4  python
+    5  python3
+    6  spark
+    7  spark-shell
+    8  ls
+    9  ./bin/spark-submit NER.py
+   10  spark-submit NER.py
+   11  cat NER.py
+   12  vim
+   13  nano NER.py
+   14  nano --version
+   15  sudo apt install nano
+   16  cat > NER.py
+   17  vi NER.py
+   18  emacs
+   19  apt get install nano
+   20  CAT
+   21  cat
+   22  saprk-submit NER.py
+   23  spark-submit NER.py
+   24  pip3 list
+   25  pip3 install findspark
+   26  spark-submit --packages com.johnsnowlabs.nlp:spark-nlp_2.12:3.1.0 NER.py
+   27  doskey /history > all_commands.txt
+   28  history > history_for_print.txt
+
+
+Commands used when i ran it for the first time
+docker run --rm -p 4040:4040 -p 8888:8888 -v ${pwd}:/home/jovyan/work utkarsh/spark_docker:1.0
+password = sparknlp
+
+
+

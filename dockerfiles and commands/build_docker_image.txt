@@ -1,0 +1,1 @@
+docker build -t utkarsh/spark_docker:1.0 .
